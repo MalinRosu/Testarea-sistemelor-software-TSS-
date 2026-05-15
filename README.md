@@ -390,7 +390,7 @@ Ambele suite identifica aceleasi 8 clase. Diferenta este la CE5 (varsta >= 65):
 **Analiza valorilor de frontiera**
 
 Ambele suite acopera aceleasi 4 frontiere. Diferenta este la frontiera F4 (aniRamasi = 0 / 1):
-- Suita AI are doua teste explicite: BVA6 (aniRamasi=0, bucla nu ruleaza) si BVA7 (aniRamasi=1, bucla ruleaza o data).
+- Suita AI are doua teste explicite: BVA6 (aniRamasi=0, loop-ul nu ruleaza) si BVA7 (aniRamasi=1, loop-ul ruleaza o data).
 - Testele proprii au BVA6 (aniRamasi=1), iar aniRamasi=0 este acoperit in EP5 fara a fi marcat explicit ca frontiera BVA.
 
 **Circuite independente**
@@ -404,11 +404,11 @@ Aceasta este cea mai mare diferenta intre cele doua suite.
 Testele proprii au 4 teste:
 - Mutant1 (varsta <= 0) verifica ca programul nu arunca exceptie pentru varstaCurenta=0, folosind Assert.IsTrue(result >= 0) - asertiunea nu verifica valoarea returnata.
 - Mutant2 (salariu <= 0) verifica ca pentru salariuLunar=0 rezultatul este 0, folosind Assert.AreEqual(0, result) - asertiune precisa.
-- Mutant5 (inmultire vs. impartire, salariuLunar=3750) omoara mutantul, dar bucla ruleaza si ea, deci linia testata nu este izolata complet.
-- Mutant6_7_8 (factor crestere, aniCotizati=13, crestere=1.0) omoara toti trei mutantii cu 2 iteratii de bucla.
+- Mutant5 (inmultire vs. impartire, salariuLunar=3750) omoara mutantul, dar loop-ul ruleaza si ea, deci linia testata nu este izolata complet.
+- Mutant6_7_8 (factor crestere, aniCotizati=13, crestere=1.0) omoara toti trei mutantii cu 2 iteratii de loop.
 
 Suita AI are 2 teste:
-- MK1 (varstaCurenta=65, salariuLunar=3000) omoara mutantul de inmultire vs. impartire cu aniRamasi=0 - bucla nu ruleaza, linia de initializare a punctelor este izolata complet. Valoarea asteptata calculata explicit: 1134.0.
+- MK1 (varstaCurenta=65, salariuLunar=3000) omoara mutantul de inmultire vs. impartire cu aniRamasi=0 - loop-ul nu ruleaza, linia de initializare a punctelor este izolata complet. Valoarea asteptata calculata explicit: 1134.0.
 - MK2 (aniCotizati=35, crestere=10.0) omoara mutantii de factor crestere cu valoare asteptata calculata pas cu pas: 3013.605.
 
 | Mutant (denumire proprie) | Acoperit in teste proprii | Acoperit in suita AI |
