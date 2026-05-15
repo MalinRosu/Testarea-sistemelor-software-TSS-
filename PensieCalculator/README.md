@@ -176,13 +176,13 @@ Restul deciziilor (D2-D6) sunt simple — condition coverage = branch coverage p
 C# evalueaza "||" cu short-circuit — daca c1=true, c2/c3/c4 nu mai sunt evaluate.
 Astfel:
         
-|Test                 │ c1  │    c2     │    c3     │    c4    |
+|Test                 | c1  |    c2     |    c3     |    c4    |
 |---|---|---|---|---|
-|EP1 (varsta=-2)      │ T   │ neevaluat │ neevaluat │ neevaluat|
-|EP2 (salariu=-10000) │ F   │ T         │ neevaluat │ neevaluat| 
-|EP3 (ani=-10)        │ F   │ F         │ T         │ neevaluat|
-|EP4 (crestere=-2)    │ F   │ F         │ F         │ T        |
-|Orice test valid     │ F   │ F         │ F         │ F        |
+|EP1 (varsta=-2)      | T   | neevaluat | neevaluat | neevaluat|
+|EP2 (salariu=-10000) | F   | T         | neevaluat | neevaluat| 
+|EP3 (ani=-10)        | F   | F         | T         | neevaluat|
+|EP4 (crestere=-2)    | F   | F         | F         | T        |
+|Orice test valid     | F   | F         | F         | F        |
 
 **Rezultat:** 100% condition coverage - acoperit de testele existente, fara teste noi necesare.
 
