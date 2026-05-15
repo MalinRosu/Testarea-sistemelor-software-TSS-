@@ -6,7 +6,7 @@ Aplicatia implementeaza functia `CalculPensie` din clasa `CalculatorPensie` (C#,
 
 Nota: aplicatia este inspirata din algoritmul de calcul al pensiei in Romania si a fost adaptata incat sa corespunda cerintei din documentul cu Teme Proiect Testarea sistemelor software. Astfel produsul final nu este un algoritm realist de calculare a pensiei in Romania.
 
-Pe parcursul proiectului am utilizat in comun suportul de curs coroborat cu utilizarea tool-ului AI Claude (Anthropic) pentru ajutor in intelegerea aprofundata a anumitor erori, concepte si procese. De asemenea acest tool AI a fost folosit pentru identificarea comenzilor `bash` necesare pentru instalarea si utilizarea diferitelor tool-uri (vezi mai jos la sectiunea Configurare hardware/software).
+Pe parcursul proiectului am utilizat in comun suportul de curs coroborat cu utilizarea tool-ului AI Claude (Anthropic) pentru ajutor in intelegerea aprofundata a anumitor erori, concepte si procese, formatarea documentatiei si formularea ideilor tehnice. De asemenea acest tool AI a fost folosit pentru identificarea comenzilor `bash` necesare pentru instalarea si utilizarea diferitelor tool-uri (vezi mai jos la sectiunea Configurare hardware/software).
 
 Proiectul nu foloseste masina virtuala.
 
