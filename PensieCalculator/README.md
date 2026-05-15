@@ -258,29 +258,29 @@ Acesti mutanti nu pot fi omorati prin niciun test - sunt **echivalenti cu progra
 
 #### Neechivalenti (detectabili prin teste dedicate) - comportament diferit de original - putem scrie un test care il detecteaza si il "omoram"
       
-Mutant1: varstaCurenta <= 0
-Ce schimba: < devine <= 
-Echivalent?: Neechivalent
+1. Mutant1: varstaCurenta <= 0
+- Ce schimba: < devine <= 
+- Echivalent?: Neechivalent
         
-Mutant2 salariuLunar <= 0
-Ce schimba: < devine <=
-Echivalent?: Neechivalent
+2. Mutant2 salariuLunar <= 0
+- Ce schimba: < devine <=
+- Echivalent?: Neechivalent
         
-Mutant5: aniCotizati / (salariuLunar / SalariuMediuEconomie)
-Ce schimba: * devine /
-Echivalent?: Neechivalent
+3. Mutant5: aniCotizati / (salariuLunar / SalariuMediuEconomie)
+- Ce schimba: * devine /
+- Echivalent?: Neechivalent
         
-Mutant6: salariuLunarSimulat /= (1 + crestere / 100)
-Ce schimba: *= devine /=
-Echivalent?: Neechivalent
+4. Mutant6: salariuLunarSimulat /= (1 + crestere / 100)
+- Ce schimba: *= devine /=
+- Echivalent?: Neechivalent
         
-Mutant7: salariuLunarSimulat *= (1 - crestere / 100)
-Ce schimba: + devine -
-Echivalent?: Neechivalent
+5. Mutant7: salariuLunarSimulat *= (1 - crestere / 100)
+- Ce schimba: + devine -
+- Echivalent?: Neechivalent
         
-Mutant8: salariuLunarSimulat *= (1 + crestere * 100)
-Ce schimba: /100 devine *100
-Echivalent?: Neechivalent
+6. Mutant8: salariuLunarSimulat *= (1 + crestere * 100)
+- Ce schimba: /100 devine *100
+- Echivalent?: Neechivalent
 
 Am creat 4 teste aditionale pentru a diferentia mutanti neechivalenti astfel:
 
