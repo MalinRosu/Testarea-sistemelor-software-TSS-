@@ -191,30 +191,30 @@ Astfel:
 **V(G) = 7** - 7 circuite liniar independente:
 
 Deciziile din cod:
-        - D1: parametri invalizi?
-        - D2: aniRamasi > 0?
-        - D3: totalAniCotizare < 15?
-        - D4: i <= aniRamasi? (loop)
-        - D5: aniCotizati + i > 35? (bonus)
-        - D6: totalAniCotizare >= 35?
+- D1: parametri invalizi?
+- D2: aniRamasi > 0?
+- D3: totalAniCotizare < 15?
+- D4: i <= aniRamasi? (loop)
+- D5: aniCotizati + i > 35? (bonus)
+- D6: totalAniCotizare >= 35?
 
 Cele 7 circuite independente sunt astfel:
-P1: D1=true - exceptie
-P2: D1=false, D2=true, D3=true - return 0
-P3: D1=false, D2=false, D3=true - return 0
-P4: D1=false, D2=false, D3=false, D4=false, D6=true - pensie completa fara loop
-P5: D1=false, D2=true, D3=false, D4=true, D5=false, D6=true - pensie completa fara bonus
-P6: D1=false, D2=true, D3=false, D4=true, D5=true, D6=true - pensie completa cu bonus
-P7: D1=false, D2=true, D3=false, D4=true, D5=false, D6=false - pensie redusa 
+|P1: D1=true - exceptie
+|P2: D1=false, D2=true, D3=true - return 0
+|P3: D1=false, D2=false, D3=true - return 0
+|P4: D1=false, D2=false, D3=false, D4=false, D6=true - pensie completa fara loop
+|P5: D1=false, D2=true, D3=false, D4=true, D5=false, D6=true - pensie completa fara bonus
+|P6: D1=false, D2=true, D3=false, D4=true, D5=true, D6=true - pensie completa cu bonus
+|P7: D1=false, D2=true, D3=false, D4=true, D5=false, D6=false - pensie redusa 
         
 Pentru:
-    P1 - EP1, 
-    P2 - EP7, 
-    P3 - BP1,
-    P4 - EP5, 
-    P5 - EP9, 
-    P6 - BVA4, 
-    P7 - EP8.
+|P1 - EP1, 
+|P2 - EP7, 
+|P3 - BP1,
+|P4 - EP5, 
+|P5 - EP9, 
+|P6 - BVA4, 
+|P7 - EP8.
 
 Testul BP1 a fost adaugat special pentru P3 - singurul circuit fara acoperire din testele EP/BVA:
 
