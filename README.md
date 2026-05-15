@@ -320,7 +320,7 @@ Am creat 4 teste aditionale pentru a diferentia mutanti neechivalenti astfel:
     public void Mutant6_7_8_salariuLunarSimulat() 
     {
         // varstaCurenta = 63 pentru a intra de doua ori in loop si pentru a incrementa o data salariul simulat
-        // aniCotizati = 13 petnru a ajunge la minimul de 15 ani
+        // aniCotizati = 13 pentru a ajunge la minimul de 15 ani
         // salariuLunar = 7500 pentru calcul usor
         // Original: totalPuncte = 15.01
         // Mutant6: totalPuncte = 14 + 1/1.01
@@ -443,8 +443,8 @@ Diferentele principale sunt:
 
 1. Suport de curs Testarea sistemelor software - materiale laborator 
 
-2. Casa nationala de Pensii Publice. https://www.cnpp.ro/calculul-pensiei, Data accesarii: 12 Mai 2026
+2. Casa nationala de Pensii Publice, https://www.cnpp.ro/calculul-pensiei, Data accesarii: 12 Mai 2026
 
-3. Anthropic. *Claude - AI assistant*. https://claude.ai, Data generarii: 14 Mai 2026
+3. Anthropic, Claude - AI assistant, https://claude.ai, Data generarii: 14 Mai 2026
 
-4. Mermaid live. https://mermaid.live, Data accesarii: 12 Mai 2026
+4. Mermaid live, https://mermaid.live, Data accesarii: 12 Mai 2026
