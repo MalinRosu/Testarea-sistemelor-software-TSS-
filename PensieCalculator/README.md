@@ -175,12 +175,13 @@ Singura conditie compusa D1: c1:varstaCurenta<0 || c2:salariuLunar<0 || c3:aniCo
 Restul deciziilor (D2-D6) sunt simple — condition coverage = branch coverage pentru ele.
 C# evalueaza "||" cu short-circuit — daca c1=true, c2/c3/c4 nu mai sunt evaluate.
 Astfel:
-        Test                 │ c1  │    c2     │    c3     │    c4   
-        EP1 (varsta=-2)      │ T   │ neevaluat │ neevaluat │ neevaluat 
-        EP2 (salariu=-10000) │ F   │ T         │ neevaluat │ neevaluat 
-        EP3 (ani=-10)        │ F   │ F         │ T         │ neevaluat
-        EP4 (crestere=-2)    │ F   │ F         │ F         │ T   
-        Orice test valid     │ F   │ F         │ F         │ F   
+        |Test                 │ c1  │    c2     │    c3     │    c4    |
+        |---|---|---|---|---|
+        |EP1 (varsta=-2)      │ T   │ neevaluat │ neevaluat │ neevaluat|
+        |EP2 (salariu=-10000) │ F   │ T         │ neevaluat │ neevaluat| 
+        |EP3 (ani=-10)        │ F   │ F         │ T         │ neevaluat|
+        |EP4 (crestere=-2)    │ F   │ F         │ F         │ T        |
+        |Orice test valid     │ F   │ F         │ F         │ F        |
 
 **Rezultat:** 100% condition coverage - acoperit de testele existente, fara teste noi necesare.
 
