@@ -109,14 +109,14 @@ Clasele de echivalenta identificate:
 
 PARTITIONARE IN CLASE DE ECHIVALENTA - partitionarea domeniului problemei (datele de intrare) în partitii de echivalenta sau clase de echivalenta astfel incat, din punctul de vedere al specificatiei datele dintr-o clasa sunt tratate în mod identic [1].
 Clase de echivalenta identificate:
-CE1: varstaCurenta < 0          - exceptie
-CE2: salariuLunar < 0           - exceptie
-CE3: aniCotizati < 0            - exceptie
-CE4: crestereAnualaSalariu < 0  - exceptie
-CE5: varstaCurenta >= 65        - aniRamasi <= 0, loop-ul nu ruleaza
-CE6: totalAniCotizare < 15      - return 0
-CE7: 15 <= totalAniCotizare < 35 - pensie redusa
-CE8: totalAniCotizare >= 35     - pensie completa
+- CE1: varstaCurenta < 0          - exceptie
+- CE2: salariuLunar < 0           - exceptie
+- CE3: aniCotizati < 0            - exceptie
+- CE4: crestereAnualaSalariu < 0  - exceptie
+- CE5: varstaCurenta >= 65        - aniRamasi <= 0, loop-ul nu ruleaza
+- CE6: totalAniCotizare < 15      - return 0
+- CE7: 15 <= totalAniCotizare < 35 - pensie redusa
+- CE8: totalAniCotizare >= 35     - pensie completa
 
 **Teste scrise:** EP1-EP9 (9 teste)
 
@@ -139,12 +139,12 @@ BVA6 (`aniRamasi = 1`) a fost adaugat explicit pentru a testa loop-ul cu o singu
 
 Fiecare linie de cod executata cel putin o data.
 Toate liniile sunt acoperite de testele anterioare:
-throw ArgumentException         - EP1-EP4
-if (aniRamasi > 0)              - EP5, EP6 (false); EP7, EP8, EP9 (true)
-if (totalAniCotizare < 15)      - EP7, BVA1 (true); EP8, EP9 (false)
-totalPuncte += puncteAn * 0.05  - BVA4
-return pensie completa          - EP9, BVA3
-return pensie redusa            - EP8, BVA5
+- throw ArgumentException         - EP1-EP4
+- if (aniRamasi > 0)              - EP5, EP6 (false); EP7, EP8, EP9 (true)
+- if (totalAniCotizare < 15)      - EP7, BVA1 (true); EP8, EP9 (false)
+- totalPuncte += puncteAn * 0.05  - BVA4
+- return pensie completa          - EP9, BVA3
+- return pensie redusa            - EP8, BVA5
 
 **Rezultat:** 100% statement coverage, confirmat de raportul Coverlet.
 
@@ -199,22 +199,22 @@ Deciziile din cod:
 - D6: totalAniCotizare >= 35?
 
 Cele 7 circuite independente sunt astfel:
-|P1: D1=true - exceptie
-|P2: D1=false, D2=true, D3=true - return 0
-|P3: D1=false, D2=false, D3=true - return 0
-|P4: D1=false, D2=false, D3=false, D4=false, D6=true - pensie completa fara loop
-|P5: D1=false, D2=true, D3=false, D4=true, D5=false, D6=true - pensie completa fara bonus
-|P6: D1=false, D2=true, D3=false, D4=true, D5=true, D6=true - pensie completa cu bonus
-|P7: D1=false, D2=true, D3=false, D4=true, D5=false, D6=false - pensie redusa 
+- P1: D1=true - exceptie
+- P2: D1=false, D2=true, D3=true - return 0
+- P3: D1=false, D2=false, D3=true - return 0
+- P4: D1=false, D2=false, D3=false, D4=false, D6=true - pensie completa fara loop
+- P5: D1=false, D2=true, D3=false, D4=true, D5=false, D6=true - pensie completa fara bonus
+- P6: D1=false, D2=true, D3=false, D4=true, D5=true, D6=true - pensie completa cu bonus
+- P7: D1=false, D2=true, D3=false, D4=true, D5=false, D6=false - pensie redusa 
         
 Pentru:
-|P1 - EP1, 
-|P2 - EP7, 
-|P3 - BP1,
-|P4 - EP5, 
-|P5 - EP9, 
-|P6 - BVA4, 
-|P7 - EP8.
+- P1 - EP1, 
+- P2 - EP7, 
+- P3 - BP1,
+- P4 - EP5, 
+- P5 - EP9, 
+- P6 - BVA4, 
+- P7 - EP8.
 
 Testul BP1 a fost adaugat special pentru P3 - singurul circuit fara acoperire din testele EP/BVA:
 
