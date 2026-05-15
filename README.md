@@ -428,7 +428,7 @@ Suita AI documenteaza fiecare test cu calcule complete pas cu pas in comentarii,
 
 ### 6.4 Concluzie
 
-Ambele suite ating 100% statement, branch si condition coverage si acopera toate cele 7 circuite independente. Ambele folosesc ValoarePunctPensie=81.0 RON. Scorul de mutanti este similar.
+Ambele suite ating 100% statement, branch si condition coverage si acopera toate cele 7 circuite independente. Scorul de mutanti este similar.
 
 Diferentele principale sunt:
 - **Numar de teste**: testele proprii au 20 de teste, suita AI are 18
