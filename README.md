@@ -82,7 +82,7 @@ dotnet stryker
 
 ## 3. Graf de control al fluxului (CFG)
 
-Graful de control al fluxului a fost construit in [mermaid.live](https://mermaid.live) pe baza codului sursa, cu noduri corespunzatoare fiecarei decizii si instructiuni relevante.
+Graful de control al fluxului a fost construit in [mermaid.live](https://mermaid.live) pe baza codului sursa, cu noduri corespunzatoare fiecarei decizii si instructiuni relevante [4].
 
 ![Control Flow Graph](PensieCalculator/Control%20Flow%20Graph.png)
 
