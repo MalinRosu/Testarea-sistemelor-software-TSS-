@@ -84,7 +84,7 @@ dotnet stryker
 
 Graful de control al fluxului a fost construit in [mermaid.live](https://mermaid.live) pe baza codului sursa, cu noduri corespunzatoare fiecarei decizii si instructiuni relevante.
 
-![Control Flow Graph](Control%20Flow%20Graph.png)
+![Control Flow Graph](PensieCalculator/Control%20Flow%20Graph.png)
 
 **Decizii identificate:**
 | Decizie | Conditie |
@@ -148,7 +148,7 @@ Toate liniile sunt acoperite de testele anterioare:
 
 **Rezultat:** 100% statement coverage, confirmat de raportul Coverlet.
 
-![Raport coverage](Raport%20coverage%20instructiuni%2C%20ramuri.png)
+![Raport coverage](PensieCalculator/Raport%20coverage%20instructiuni%2C%20ramuri.png)
 
 
 ### 4.4 Acoperire la nivel de decizie (Branch Coverage)
@@ -224,7 +224,7 @@ CalculatorPensie.CalculPensie(66, 7500, 10, 0.0) // expected: 0
 ```
 Captura de ecran cu rularea testelor proprii:
 
-![Rulare teste](dotnet%20test%20user.png)
+![Rulare teste](PensieCalculator/dotnet%20test%20user.png)
 
 
 ## 5. Testare prin mutanti (Stryker.NET)
@@ -233,9 +233,9 @@ Captura de ecran cu rularea testelor proprii:
 - Inainte de eliminare a mutantilor neechivalenti `PensieTests/StrykerOutput/2026-05-15.18-10-28/reports/mutation-report.html`
 - Dupa eliminarea mutantilor neechivalenti `PensieTests/StrykerOutput/2026-05-15.18-10-50/reports/mutation-report.html`
 
-![Raport Stryker inainte](stryker%20test%201.png)
+![Raport Stryker inainte](PensieCalculator/stryker%20test%201.png)
 
-![Raport Stryker dupa](stryker%20test%202.png)
+![Raport Stryker dupa](PensieCalculator/stryker%20test%202.png)
 
 
 ### Rezultate
@@ -344,7 +344,7 @@ Fisierele comparate:
 
 Captura de ecran cu rularea ambelor suite (teste proprii + teste generate de AI):
 
-![Rulare teste AI si proprii](dotnet%20test%20tot.png)
+![Rulare teste AI si proprii](PensieCalculator/dotnet%20test%20tot.png)
 
 ### 6.0 Exemple de interactiune cu AI
 
